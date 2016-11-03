@@ -12,4 +12,4 @@ RUN make -C ${DIALIGN_PATH}/src
 ENV DIALIGN2_DIR ${DIALIGN_PATH}/dialign2_dir
 RUN mkdir -p $(dirname $DIALIGN_DESTINATION) && mv ${DIALIGN_PATH}/src/dialign2-2 ${DIALIGN_DESTINATION}
 
-ENTRYPOINT ["/usr/local/bin/run.sh"]
+ENTRYPOINT [$DIALIGN_DESTINATION]
