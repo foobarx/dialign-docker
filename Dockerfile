@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Peter Belmann
 
-ARG DIALIGN_DESTINATION=/dialign2
+ARG DIALIGN_DESTINATION=/dialign
 RUN apt-get update
 RUN apt-get install -y wget build-essential
 RUN wget http://bibiserv.techfak.uni-bielefeld.de/applications/dialign/resources/downloads/dialign-2.2.1-src.tar.gz
