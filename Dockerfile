@@ -1,6 +1,9 @@
 FROM ubuntu:14.04
 MAINTAINER Peter Belmann
 
+# ENV http_proxy http://rzproxy.helmholtz-hzi.de:3128
+# ENV https_proxy http://rzproxy.helmholtz-hzi.de:3128
+
 ARG DIALIGN_DESTINATION=/dialign
 RUN apt-get update
 RUN apt-get install -y wget build-essential
