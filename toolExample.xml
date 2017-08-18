@@ -6,7 +6,7 @@
   <!--
   <command>/home/gary/git/galaxy/tools/dialign/dialign_package/src/dialign2-2 -thr 0 -fa -fn $output $input</command>
   -->
-  <command>docker run --memory 4096m --cpuset-cpus 1 --entrypoint='/dialign' -v /home/gary/git/galaxy/database/files/000:/home/gary/git/galaxy/database/files/000:rw local/dialign:1.0 -thr 0 -fa -fn $output
+  <command>docker run --memory 4096m --cpuset-cpus 1 --entrypoint='/dialign' -v /home/gary/git/galaxy/database/files/000:/home/gary/git/galaxy/database/files/000:rw local/dialign:1.0 -thr 0 -fa -fn $output</command>
   <inputs>
     <param format="fasta" name="input" type="data" label="Source file"/>
   </inputs>
