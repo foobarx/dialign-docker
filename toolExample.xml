@@ -1,0 +1,18 @@
+<tool id="Dialign" name="Dialign" version="2.2.1">
+  <description>for each sequence in a file</description>
+  <environment_variables>
+    <environment_variable name="DIALIGN2_DIR">/home/gary/git/galaxy/tools/dialign/dialign_package/dialign2_dir</environment_variable>
+  </environment_variables>
+  <command>/home/gary/git/galaxy/tools/dialign/dialign_package/src/dialign2-2 -thr 0 -fa -fn $output $input</command>
+  <inputs>
+    <param format="fasta" name="input" type="data" label="Source file"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" />
+  </outputs>
+
+  <help>
+This tool computes GC content from a FASTA file.
+  </help>
+
+</tool>
