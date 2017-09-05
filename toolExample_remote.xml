@@ -1,1 +1,16 @@
+<tool id="Dialign" name="Dialign" version="2.2.1">
+  <description>for each sequence in a file</description>
+  <command>ssh phobos-util-03.bifo.helmholtz-hzi.de submit_dialign.sh $input $output</command>  
+  <inputs>
+    <param format="fasta" name="input" type="data" label="Source file"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" />
+  </outputs>
+
+  <help>
+This tool computes GC content from a FASTA file.
+  </help>
+
+</tool>
 
