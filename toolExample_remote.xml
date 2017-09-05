@@ -1,6 +1,6 @@
 <tool id="Dialign" name="Dialign" version="2.2.1">
   <description>for each sequence in a file</description>
-  <command>ssh phobos-util-03.bifo.helmholtz-hzi.de /home/galaxysubmit.sh dialign $input $output</command>  
+  <command>ssh phobos-util-03.bifo.helmholtz-hzi.de /home/galaxy/submit.sh dialign $input $output</command>  
   <inputs>
     <param format="fasta" name="input" type="data" label="Source file"/>
   </inputs>
